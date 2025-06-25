@@ -1,0 +1,16 @@
+services:
+  cw-api:
+    build:
+      context: .             
+      dockerfile: docker/Dockerfile 
+    container_name: cw-api-logs
+    ports:
+      - "80:80" 
+    volumes:
+      - /var/log/cw-api:/var/log/cw-api
+    restart: always 
+    environment:
+      PROJECT_NAME: "CloudWatch API Test"
+      SERVICE_NAME: "cw-api"
+      LOG_LEVEL: WARNING
+      API_PORT: 80
