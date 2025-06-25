@@ -9,7 +9,7 @@ class Settings:
     VERSION: str = "1.0.0"
 
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO").upper()
-    LOG_FILE_PATH: str = os.getenv("LOG_FILE_PATH", "/var/log/cw-api/logs.json")
+    LOG_FILE_PATH: str = os.getenv("LOG_FILE_PATH", "/var/log/cw-api/cw-api.log")
 
     API_PORT: int = int(os.getenv("API_PORT", 80))
 
