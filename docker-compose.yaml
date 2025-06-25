@@ -12,5 +12,5 @@ services:
     environment:
       PROJECT_NAME: "CloudWatch API Test"
       SERVICE_NAME: "cw-api"
-      LOG_LEVEL: WARNING
+      LOG_LEVEL: INFO
       API_PORT: 80
